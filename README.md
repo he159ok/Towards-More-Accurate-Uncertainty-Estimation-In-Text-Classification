@@ -108,6 +108,7 @@ amazon
 where "-MdistTest" is whether to apply distinctiveness score in the test process or not.
 
 If apply "-MdistTest", it is necessary to calculate the mean and inverse of covariance matrix by running as "main_testMyMetric.py",
+The mean and covariance matrix of the 20news, imdb, amazon, amazon (for XLnet feature) and yelp have been uploaded.
 '''
 For the above testing example, we should run below firstly,
 python main_testMyMetric.py
