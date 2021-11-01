@@ -30,6 +30,8 @@ Please download the data.zip file from emnlp 2020 supplementary material, which 
 
 Please download "glove.6B.zip" from https://nlp.stanford.edu/projects/glove/ and unzip it. Please make the unzipped file "glove.6B" in the root directory under the "data" file.
 
+For the amazon XLNet, we pre-extract the XLNet features from Amazon, which can be downloadde from [here] (https://drive.google.com/drive/folders/1RPGl3fgvAFZvozcai6puktKFNhcoyMZd?usp=sharing). Our code for the XLNet freezes the XLNet layers, but only fine-tunes the last two layers.
+
 ______
 
 
