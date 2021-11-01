@@ -30,6 +30,7 @@ Please download the data.zip file from emnlp 2020 supplementary material, which 
 
 Please download "glove.6B.zip" from https://nlp.stanford.edu/projects/glove/ and unzip it. Please make the unzipped file "glove.6B" in the root directory under the "data" file.
 
+
 For the amazon XLNet, we pre-extract the XLNet features from Amazon, which can be downloadde from [here](https://drive.google.com/drive/folders/1RPGl3fgvAFZvozcai6puktKFNhcoyMZd?usp=sharing). Our code for the XLNet freezes the XLNet layers, but only fine-tunes the last two layers.
 
 ______
@@ -57,7 +58,7 @@ amazon
 0.1
 -lstm
 ```
-Where you can apply "-mixup" to set whether apply mix-up or not; apply "-self-ensemble" to set whether apply self-ensembling or not, and "-intraRate [float]" to set $\lambada_2$ to the value of [float]; apply "-dataset [dataset_name]" to set different dataset, which [dataset_name] equals to one of [20news, imdb, amazon, autogsr, yelp] in string format; apply "-lstm" to set whether apply BiGRU or not, the default DNN is CNN.
+Where you can apply "-mixup" to set whether apply mix-up or not; apply "-self-ensemble" to set whether apply self-ensembling or not, and "-intraRate [float]" to set $\lambada_2$ to the value of [float]; apply "-dataset [dataset_name]" to set different dataset, which [dataset_name] equals to one of [20news, imdb, amazon, yelp] in string format; apply "-lstm" to set whether apply BiGRU or not, the default DNN is CNN.
 
 '''
 E.g. Train MSD with mix-up and self-ensebmling components by XLnet on Amzon dataset:
